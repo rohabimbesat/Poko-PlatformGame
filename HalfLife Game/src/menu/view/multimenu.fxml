@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox stylesheets="menu/view/style.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.view.MultiMenuController">
+	<children>
+      <ImageView fitHeight="900.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@title/multiplayer.png" />
+         </image>
+      </ImageView>
+		<Label /> <Label /> <Label /> <Label /> <Label />
+		<Button onAction="#goJoin" text="JOIN GAME" />
+		<Label />
+		<Button onAction="#goHost" text="HOST GAME" />
+		<Label />
+		<Button onAction="#goBack" text="BACK" />
+   </children>
+</VBox>

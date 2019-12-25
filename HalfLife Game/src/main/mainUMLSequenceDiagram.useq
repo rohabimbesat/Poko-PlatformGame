@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="main.Game" project="HalfLife Game" file="/HalfLife Game/src/main/Game.java" 
+    binary="false" label="game" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="181" y="0"/>    
+    <execution id="2">      
+      <position height="434" width="0" x="0" y="411"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="380" width="0" x="0" y="447"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="18" width="0" x="0" y="692"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="com.halflife.entities.Player" project="HalfLife Game" 
+    file="/HalfLife Game/src/com/halflife/entities/Player.java" binary="false" label="player" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="18" width="0" x="0" y="474"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="com.halflife.enemies.BaseEnemy" project="HalfLife Game" 
+    file="/HalfLife Game/src/com/halflife/enemies/BaseEnemy.java" binary="false" label="enemy" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="18" width="0" x="0" y="546"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="com.halflife.enemies.Spike" project="HalfLife Game" 
+    file="/HalfLife Game/src/com/halflife/enemies/Spike.java" binary="false" label="spike" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="18" width="0" x="0" y="628"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="javafx.scene.layout.Pane" project="HalfLife Game" 
+    file="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar" binary="true" label="foreground" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="14">      
+      <position height="18" width="0" x="0" y="755"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="javafx.collections.ObservableList" project="HalfLife Game" 
+    file="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar" binary="true" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="16">      
+      <position height="18" width="0" x="0" y="791"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="22" interaction-operator="LOOP">    
+    <interaction-operand id="23" constraint="for: enemies">      
+      <fragment refId="7"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="24" interaction-operator="LOOP">    
+    <interaction-operand id="25" constraint="for: spikes">      
+      <fragment refId="9"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="26" interaction-operator="OPT">    
+    <interaction-operand id="27" constraint="player.isDead() &amp;&amp; !foreground.getChildren().contains(DeathShow)">      
+      <fragment refId="13"/>      
+      <fragment refId="15"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="tick():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="tick(javafx.scene.layout.Pane,main.Lives):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="tick(com.halflife.entities.Player):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="tick(com.halflife.entities.Player):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="checkPos():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="getChildren():javafx.collections.ObservableList&lt;javafx.scene.Node&gt;" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="add(E):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>
+</sequence-diagram>

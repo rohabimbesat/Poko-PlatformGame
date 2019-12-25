@@ -1,0 +1,14 @@
+{
+	"level" : "first adventure",
+	"worldWidth" : 500,
+	"worldHeight" : 300,
+	"worldObjects" :[
+		{"type" : "platform",
+		"properties" : ["x","y","w","h"]},
+		{"type" : "platform",
+		"properties" : [100,100,300,150]},
+		{"type" : "spikePlatform",
+		"properties" : [500,300,400,150]}
+	],
+	"playerStart" : [500,200]
+}

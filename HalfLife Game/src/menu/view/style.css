@@ -1,0 +1,66 @@
+@font-face {
+	font-family:"Press Start 2P";
+	src:url("file:src/menu/view/PressStart2P.ttf");
+}
+
+.root {
+	-fx-alignment: center ;
+	-fx-background-color: linear-gradient(#333333, #8096ba);
+}
+
+.button{
+	-fx-font-weight: bold;
+	-fx-background-color: white;
+	-fx-background-radius: 30;
+	-fx-font-size: 14;
+	-fx-text-fill: #696969;
+	-fx-font-family: "Press Start 2P";
+	-fx-pref-width: 300.0;
+	-fx-pref-height: 48.0;
+
+}
+.button:hover{
+	-fx-border-color: #696969;
+	-fx-border-radius: 30;
+	-fx-border-width: 5;
+}
+
+.button:pressed{
+	-fx-background-color: #FFED90;
+}
+
+.levelBtn{
+	-fx-padding: 10 50;
+	-fx-pref-width:60.0;
+	-fx-pref-height:60.0;
+}
+.levelBtn:hover{
+	-fx-pref-width:60.0;
+	-fx-pref-height:75.0;
+}
+.title {
+	-fx-padding: 10 ;
+  /*-fx-padding: 3 30 3 30;*/
+	-fx-font: 100px Tahoma;
+	-fx-fill: white;
+	-fx-stroke: black;
+    -fx-stroke-width: 1;
+    -fx-alignment:center;
+	-fx-text-font-size:35.0;
+}
+.subTitle{
+	-fx-font: 25px Tahoma;
+	-fx-fill: white;
+}
+.right{
+	-fx-alignment:center_right;
+}
+SpriteAnimation{
+	/*Style any sprites*/
+}
+TextField{
+	-fx-font: 25px Tahoma;
+}
+ImageView{
+	-fx-fit-height:400px;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox stylesheets="menu/view/style.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.view.MainMenuController">
+	<children>
+      <ImageView fitHeight="400.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@title/poko.png" />
+         </image>
+      </ImageView>
+      	<Label /> <Label /> <Label />
+		<Button onAction="#goSingle" text="SINGLE PLAYER" />
+		<Label />
+		<Button onAction="#goMulti" text="MULTIPLAYER" />
+		<Label />
+		<Button onAction="#goSettings" text="SETTINGS" />
+		<Label />
+		<Button onAction="#goBack" text="BACK" />
+	</children>
+</VBox>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox stylesheets="menu/view/style.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="menu.view.JoinMenuController">
+	<children>
+      <ImageView fitHeight="600.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@title/joingame.png" />
+         </image>
+      </ImageView>
+		<Label /> <Label /> <Label /> <Label /> <Label />
+      <ImageView fitHeight="25.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@title/enterhost.png" />
+         </image>
+      </ImageView>
+		<Label /> <Label />
+		<HBox>
+			<Region HBox.hgrow="ALWAYS" />
+			<TextField id="ipAddrInput" fx:id="ipAddrInput" onAction="#goNext" prefWidth="400.0" text="localhost" />
+			<Region HBox.hgrow="ALWAYS" />
+		</HBox>
+		<Label /> <Label /> <Label /> <Label /> <Label />
+		<HBox>
+			<Button onAction="#goBack" text="BACK" />
+			<Region HBox.hgrow="ALWAYS" />
+			<VBox styleClass="right">
+				<children>
+					<Button onAction="#goNext" prefHeight="27.0" prefWidth="104.0" text="NEXT" />
+				</children>
+			</VBox>
+		</HBox>
+   </children>
+</VBox>
